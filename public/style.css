@@ -1,0 +1,100 @@
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --heading-font-size: 3rem;
+  --body-font-size: 0.95rem;
+  --desktop-heading-line-height: 4.3rem;
+  --mobile-heading-line-height: 3rem;
+  --desktop-body-line-height: 1.8rem;
+  --mobile-body-line-height: 1.4rem;
+  --black: black;
+  --white: white;
+  --mobile-padding: 0.9rem;
+  --desktop-padding: 2.7rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+/*  */
+
+/*  */
+
+/* Header section */
+#logo {
+  width: 9.5rem;
+  cursor: pointer;
+}
+header.banner {
+  background: var(--black);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0.9rem var(--desktop-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.banner ul {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+  align-items: center;
+}
+header.banner ul li a {
+  padding: 0.2rem 0.4rem;
+  color: white;
+}
+#contact-link {
+  background: white;
+  color: black;
+  font-weight: 700;
+  letter-spacing: -0.03rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 30rem;
+}
+/* Header section end */
+
+/*  */
+
+/* Home Hero section */
+main.home-hero-container {
+  padding: 5rem var(--desktop-padding) 3rem;
+  background: var(--black);
+  color: white;
+}
+p.home-hero-title {
+  font-size: 4.3rem;
+  font-weight: 800;
+  line-height: var(--desktop-heading-line-height);
+  margin-bottom: 2.2rem;
+}
+p.home-hero-body {
+  width: 80%;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: var(--desktop-body-line-height);
+}
+section.home-hero-text-content {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+section.home-hero-copy {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+#hero-img {
+  width: 100%;
+  margin: 5.7rem auto;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#hero-img:hover {
+  transform: scale(1.02);
+}
+/* Home Hero Section end */
