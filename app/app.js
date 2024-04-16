@@ -17,7 +17,7 @@ app.get("/route", (req, res) => {
 
 async function startServer(db_url) {
   try {
-    await mongoose.connect(db_url);
+    // await mongoose.connect(db_url);
     console.log(`DB connected...`);
     app.listen(port, () => console.log(`Server running on port ${port}...`));
   } catch (error) {
