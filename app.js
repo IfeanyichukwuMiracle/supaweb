@@ -7,6 +7,7 @@ const port = process.env.PORT || 5000;
 startServer(process.env.MONGO_LOCAL_URI);
 
 // middleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(`./public`));
 

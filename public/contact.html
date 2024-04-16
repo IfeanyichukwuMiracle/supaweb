@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/Asset 2.svg" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Supaweb is a web agency specialized in creating fully optimized, performant websites specifically for your service business"
+    />
+    <meta name="robots" content="nofollow, index" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      You Need Website That Drives Leads For Your Service Business? Yes? Let's
+      Talk Now.
+    </title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="banner">
+      <a href="/">
+        <img
+          src="./assets/Asset 1.svg"
+          style="display: block"
+          alt="supaweb-logo"
+          id="logo"
+        />
+      </a>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="./contact.html" id="contact-link">Contact</a></li>
+      </ul>
+      <div class="hamburger-btn">menu</div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hamburger menu -->
+    <section class="hamburger-menu hide">
+      <div class="hamburger-menu-items">
+        <div class="close-btn">close</div>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Hamburger menu end -->
+
+    <script>
+      const openBtn = document.querySelector("div.hamburger-btn");
+      const closeBtn = document.querySelector("div.close-btn");
+      const menu = document.querySelector("section.hamburger-menu");
+
+      openBtn.addEventListener("click", () => {
+        menu.classList.contains("hide") ? menu.classList.remove("hide") : null;
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.contains("hide") ? null : menu.classList.add("hide");
+      });
+    </script>
+  </body>
+</html>
