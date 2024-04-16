@@ -109,8 +109,8 @@ section.hamburger-menu {
 }
 .close-btn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.7rem;
+  right: 0.7rem;
 }
 .hide {
   display: none;
